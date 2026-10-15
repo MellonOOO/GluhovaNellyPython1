@@ -1,3 +1,5 @@
+import math
+
 num1 = float(input())
 operation = str
 while operation != "exit":
@@ -22,6 +24,15 @@ while operation != "exit":
             num2 = float(input())
             num1 = num1 / num2
             print(f"промежуточный результат = {num1}")
+    elif operation == "**":
+        num2 = float(input())
+        num1 = num2 ** num1
+        print(f"промежуточный результат = {num1}")
+    elif operation == "//":
+        num2 = float(input())
+        num1 = num2 // num1
+        print(f"промежуточный результат = {num1}")
+
     elif operation == "=":
         print(f"результат = {num1}")
         exit()
